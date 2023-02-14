@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Rotate a 2D matrix by 90 degrees (clockwise)
+Rotate a 2D matrix by 90 degrees (clockwise).
 """
 
 
@@ -19,7 +19,7 @@ def rotate_2d_matrix(matrix):
             # left -> top
             matrix[first][i] = matrix[last - offset][first]
 
-            #bottom -> left
+            # bottom -> left
             matrix[last - offset][first] = matrix[last][last - offset]
 
             # right -> bottom
