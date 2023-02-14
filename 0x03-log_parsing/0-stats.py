@@ -41,7 +41,7 @@ if __name__ == "__main__":
         for line in sys.stdin:
             file_size += parse_line(line)
             if count % 10 == 0:
-                print stats()
+                print_stats()
             count += 1
     except KeyboardInterrupt:
         print_stats()
